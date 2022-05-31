@@ -57,14 +57,6 @@ legend {
     margin: 0.3rem;
 }
 
-  /* A <label> element inside an element with class="form-group" */
-.form-group label {
-    display: inline-block;
-    box-sizing: border-box;
-    min-width: 10rem;
-    max-width: 100%;
-}
-
 /* A <textarea> element inside an element with class="form-group" */
 .form-group textarea {
     display: block;
@@ -73,11 +65,6 @@ legend {
   }
   
   /* A <label> element inside an element with class="form-wrap" */
-.form-wrap label {
+  .form-wrap label {
     margin-bottom: 0.5rem;
-}
-  
-  /* A <label> element inside an element with class="form-inline" */
-.form-inline label {
-    min-width: 0;
 }
