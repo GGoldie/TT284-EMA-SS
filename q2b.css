@@ -81,3 +81,12 @@ legend {
 .form-inline label {
     min-width: 0;
 }
+
+/* Respond to smaller screens */
+@media only screen and (max-width: 400px) {
+    .radio,
+    .date,
+    .prompt {
+      display: block;
+    }
+}
