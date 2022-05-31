@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Walk Event form">
+  <meta name="author" content="Simon Siddle">
+  <title>Walk Event form</title>
+  <!-- Set viewport to ensure this page scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="q2b.css">
+</head>
+
+<body>
+
+  <nav class = "navigation" id="mobile">
+    <ul>
+      <li><a href = "calendar.html">Calendar</a></li>
+      <li><a href = "other.html">Other Events</a></li>
+      <li><a href = "members.html">Members</a></li>
+      <li><a href = "announcements.html">Announcements</a></li>
+      <li><a href = "news.html">News</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="heading"><h1>Add Walk Event Form</h1></div>
+  </header>
+
+  <nav class = "navigation" id="desktop">
+    <p>
+    <a href = "calendar.html">Calendar |</a> 
+    <a href = "other.html">Other Events |</a>
+    <a href = "members.html">Members |</a>
+    <a href = "announcements.html">Announcements|</a>
+    <a href = "news.html">News</a>
+    </p>
+  </nav>
+
+  <main>
+
+    <form 
+     method="POST"
+     action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php"
+     >
+     <fieldset>
+       <legend>Name</legend>
+       <div class="form-group">
+        <label for="name">Name of Event</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          maxlength="20"
+          minlength="1"
+          value=""
+        />
+       </div>
+     </fieldset>
+     <fieldset>
+       <legend>Date and Time</legend>
+       <div class="form-group">
+        <label for="date">Date of Event</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          required
+          value=""
+        />
+       </div>
+       <div class="form-group">
+        <label for="start">Start time of Event</label>
+        <input
+          type="time"
+          name="start"
+          id="start"
+          required
+          value=""
+        />
+       </div>
+       <div class="form-group">
+        <label for="end">End time of Event</label>
+        <input
+          type="time"
+          name="end"
+          id="end"
+          required
+          value=""
+        />
+       </div>
+     </fieldset>
+     <fieldset>
+      <legend>Event details</legend>
+      <div class="form-group">
+       <label for="meeting">Meeting Point</label>
+       <input
+         type="text"
+         name="meeting"
+         id="meeting"
+         required
+         maxlength="20"
+         minlength="1"
+         value=""
+       />
+      </div>
+      <div class="form-group">
+      <label for="distance">Distance (in Kilometres)</label>
+      <input
+        type="number"
+        name="distance"
+        id="distance"
+        required
+        value=""
+      />
+      </div>
+      <div class="form-group">
+      <label for="leader">Name of leader</label>
+      <input
+        type="text"
+        name="leader"
+        id="leader"
+        required
+        maxlength="20"
+        minlength="1"
+        value=""
+      />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Status</legend>
+      <div class="form-group form-inline">
+        <span class="radio">
+          <input
+            id="status_0"
+            name="status"
+            type="radio"
+            value="Proposed"
+          />
+          <label for="status_0">Proposed</label>
+        </span>
+        <span class="radio">
+          <input
+            id="status_1"
+            name="status"
+            type="radio"
+            value="Approved"
+          />
+          <label for="status_1">Approved</label>
+        </span>
+        <span class="radio">
+          <input
+            id="status_2"
+            name="status"
+            type="radio"
+            value="Rejected"
+          />
+          <label for="status_2">Rejected</label>
+        </span>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Comments</legend>
+      <div class="form-group form-wrap">
+       <textarea
+         name="comment"
+         id="comment"
+         rows="10"
+         cols="30"
+       ></textarea>
+      </div>
+    </fieldset>
+    <input type="hidden" id="sessionID" name="sessionID" value="abcd1234-ee56-ff78-9090">
+    <p>
+      <input type="submit" value="Submit" />
+    </p>
+    </form>
+
+  </main>
+
+</body>
+
+</html>
