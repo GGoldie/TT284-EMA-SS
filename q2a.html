@@ -100,8 +100,6 @@
         name="distance"
         id="distance"
         required
-        maxlength="20"
-        minlength="1"
         value=""
       />
     </p>
@@ -121,7 +119,7 @@
     <fieldset>
       <legend>Additional Information</legend>
       <p>
-        <label for="textarea">Comments:</label><br>
+        <label>Comments:</label><br>
        <textarea
          name="comment"
          id="comment"
@@ -129,10 +127,9 @@
          cols="30"
          maxlength="100"
          minlength="1"
-         value=""
        ></textarea>
        <p>
-        <label for="status">Select a status for the event</label>
+        <label>Select a status for the event</label>
         <select name="status" id="flower">
           <option value="">--Choose status--</option>
           <option value="proposed">Proposed</option>
@@ -140,7 +137,6 @@
           <option value="rejected">Rejected</option>
         </select>
       </p>
-     </p>
     </fieldset>
     <input type="hidden" id="sessionID" name="sessionID" value="abcd1234-ee56-ff78-9090">
     <p>
