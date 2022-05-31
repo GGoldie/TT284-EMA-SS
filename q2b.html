@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Walk Event form">
@@ -35,7 +35,7 @@
      >
      <fieldset>
        <legend>Name</legend>
-       <p>
+       <div class="form-group">
         <label for="name">Name of Event</label>
         <input
           type="text"
@@ -46,11 +46,11 @@
           minlength="1"
           value=""
         />
-      </p>
+       </div>
      </fieldset>
      <fieldset>
        <legend>Date and Time</legend>
-       <p>
+       <div class="form-group">
         <label for="date">Date of Event</label>
         <input
           type="date"
@@ -59,8 +59,8 @@
           required
           value=""
         />
-      </p>
-      <p>
+       </div>
+       <div class="form-group">
         <label for="start">Start time of Event</label>
         <input
           type="time"
@@ -69,8 +69,8 @@
           required
           value=""
         />
-      </p>
-      <p>
+       </div>
+       <div class="form-group">
         <label for="end">End time of Event</label>
         <input
           type="time"
@@ -79,11 +79,11 @@
           required
           value=""
         />
-      </p>
+       </div>
      </fieldset>
      <fieldset>
       <legend>Event details</legend>
-      <p>
+      <div class="form-group">
        <label for="meeting">Meeting Point</label>
        <input
          type="text"
@@ -94,8 +94,8 @@
          minlength="1"
          value=""
        />
-     </p>
-     <p>
+      </div>
+      <div class="form-group">
       <label for="distance">Distance (in Kilometres)</label>
       <input
         type="number"
@@ -104,8 +104,8 @@
         required
         value=""
       />
-    </p>
-    <p>
+      </div>
+      <div class="form-group">
       <label for="leader">Name of leader</label>
       <input
         type="text"
@@ -116,11 +116,11 @@
         minlength="1"
         value=""
       />
-    </p>
+      </div>
     </fieldset>
     <fieldset>
       <legend>Additional Information</legend>
-      <p>
+      <div class="form-group">
         <label>Comments:</label><br>
        <textarea
          name="comment"
@@ -130,7 +130,8 @@
          maxlength="100"
          minlength="1"
        ></textarea>
-       <p>
+      </div>
+      <div class="form-group">
         <label>Select a status for the event</label>
         <select name="status" id="flower">
           <option value="">--Choose status--</option>
@@ -138,7 +139,7 @@
           <option value="approved ">Approved </option>
           <option value="rejected">Rejected</option>
         </select>
-      </p>
+      </div>
     </fieldset>
     <input type="hidden" id="sessionID" name="sessionID" value="abcd1234-ee56-ff78-9090">
     <p>
