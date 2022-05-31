@@ -119,6 +119,38 @@
       </div>
     </fieldset>
     <fieldset>
+      <legend>Status</legend>
+      <div class="form-group form-inline">
+        <span class="radio">
+          <input
+            id="status_0"
+            name="status"
+            type="radio"
+            value="Proposed"
+          />
+          <label for="status_0">Proposed</label>
+        </span>
+        <span class="radio">
+          <input
+            id="status_1"
+            name="status"
+            type="radio"
+            value="Approved"
+          />
+          <label for="status_1">Approved</label>
+        </span>
+        <span class="radio">
+          <input
+            id="status_2"
+            name="status"
+            type="radio"
+            value="Rejected"
+          />
+          <label for="status_2">Rejected</label>
+        </span>
+      </div>
+    </fieldset>
+    <fieldset>
       <legend>Additional Information</legend>
       <div class="form-group form-wrap">
         <label>Comments:</label>
@@ -128,15 +160,6 @@
          rows="10"
          cols="30"
        ></textarea>
-      </div>
-      <div class="form-group">
-        <label>Select a status for the event</label>
-        <select name="status" id="flower">
-          <option value="">--Choose status--</option>
-          <option value="proposed">Proposed</option>
-          <option value="approved ">Approved </option>
-          <option value="rejected">Rejected</option>
-        </select>
       </div>
     </fieldset>
     <input type="hidden" id="sessionID" name="sessionID" value="abcd1234-ee56-ff78-9090">
