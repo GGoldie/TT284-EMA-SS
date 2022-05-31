@@ -30,6 +30,10 @@ select
     text-align: center;
 }
 
+#mobile {
+    display: none;
+}
+
 form {
     background-color: #eee;
     padding: 0.5rem;
@@ -86,7 +90,12 @@ legend {
 @media only screen and (max-width: 400px) {
     .radio,
     .date,
-    .prompt {
+    .prompt,
+    #mobile {
       display: block;
     }
+    #desktop {
+        display: none;
+    }
+    
 }
